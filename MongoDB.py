@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-
+#实现对数据库类的封装
 class MongoDB(object):
     __db = None
 
