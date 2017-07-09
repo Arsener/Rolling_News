@@ -7,12 +7,12 @@ class Requests_c (object):
     def __init__(self,url):
         self.url=url
 
-    def url_handler(self,url):
+    def url_handler(self):
         try:
-            re=requests.get(url)
+            re=requests.get(self.url)
             if re.status_code==200:
                 firstdata=re
-                print('Right request ' + url)
+                print('Right request ' + str(self.url))
                 return firstdata
             else:
                 print(re.status_code+' error')

@@ -5,7 +5,11 @@ from News_scrapy import News_scrapy
 from Requests_c import Requests_c
 
 class Sina_news_scrapy(News_scrapy):
-    def get_data(self,name):
+
+    def __init__(self):
+        self.last_time=int(time.time())  #每次都改变
+
+    def url_contruct(self):
         url_param={
               "col":89,
               "spec":'',
@@ -17,16 +21,19 @@ class Sina_news_scrapy(News_scrapy):
               "num":60,
               "asc":'',
               "page":1,
-              "last_time":int(time.time()), #第一次打开无此参数，以后每次刷新有这个参数
-              "r":0.1
+              "last_time":'', #第一次打开无此参数，以后每次刷新有这个参数
+              "r":''
         }
         url_param['r']=random.random()
-        url_param['last_time']=last_time
+        url_param['last_time']=self.last_time
         url="http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?"+urlencode(url_param)
-        re=Requests_c(url)
-        first_data=re.url_handler(url)
-        first_data.encoding='gbk'
-        t=first_data.text[15:-1]
+        return url
+
+
+
+    def get_data(self):
+        self.first_data.encoding = 'gbk'
+        t = self.first_data.text[15:-1]
         t = t.replace('serverSeconds', '\"serverSeconds\"')
         t = t.replace('path', '\"path\"')
         t = t.replace('count', '\"count\"')
@@ -44,6 +51,42 @@ class Sina_news_scrapy(News_scrapy):
         t = t.replace('last_\"time\"', '\"last_time\"')
         t = t.replace('\'', '\"')
         js = json.loads(t)
+        list=js['list']
+        data=[]
+        for i in range(len(list)):
+            list[i].pop('channel')
+            list[i].pop('type')
+            list[i].pop('pic')
+            list[i]['time'] = time.localtime(list[i]['time'])
+            list[i]['time'] = time.strftime("%Y-%m-%d %H:%M:%S", list[i]['time'])
+            data.append(list[i])
+        return data
+
+class Sohu_news_scrapy(News_scrapy):
+
+    def url_construct(self):
+        today = time.strftime('%Y-%m-%d', time.localtime())
+        today = today.replace('-', '')
+        url= "http://news.sohu.com/_scroll_newslist/" + today + "/news.inc"
+        return url
+
+    def get_data(self):
+        self.first_datar.encoding='utf-8'
+        t = self.first_data.text[16:]
+        t = t.replace('category', '\"category\"')
+        t = t.replace('item', '\"item\"')
+        te = json.loads(t)
+        year = time.strftime('%Y', time.localtime())
+        data = []
+        for item in te['item']:
+            dict = {}
+            dict['title'] = item[1]
+            dict['url'] = item[2]
+            item[3] = '' + item[3].replace('/', '-')
+            item[3] = year + '-' + item[3]
+            dict['time'] = item[3]
+            data.append(dict)
+        return  data
 
 
 
