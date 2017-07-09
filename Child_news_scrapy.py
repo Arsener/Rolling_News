@@ -114,23 +114,21 @@ class NetEase_news_scrapy(News_scrapy):
         latest = MongoDB.MongoDB.get_latest(self.name)
         latest_title = latest.get('title')
         news_list = json.loads(t).get("news")[0]
-        i = 0
+
         data = []
-        while i < 50:
-            data = news_list[i]
-            if data.get('t') == latest.get('title'):
+        for news in news_list:
+            if news.get('t') == latest_title:
                 break
 
-            title = data.get('t')
-            url = data.get('l')
-            news_time = data.get('p')
+            title = news.get('t')
+            url = news.get('l')
+            news_time = news.get('p')
 
             dict = {}
             dict['title'] = title
             dict['url'] = url
             dict['time'] = news_time
             data.append(dict)
-            i += 1
 
         return data
 
