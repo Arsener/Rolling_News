@@ -1,12 +1,15 @@
 # encoding: utf-8
 import random,time,json
+import MongoDB
 from urllib.parse import urlencode
 from News_scrapy import News_scrapy
 from Requests_c import Requests_c
 
 class Sina_news_scrapy(News_scrapy):
+    name = 'Sina'
 
     def __init__(self):
+        super(Sina_news_scrapy,self).__init__(self.name)
         self.last_time=int(time.time())  #每次都改变
 
     def url_contruct(self):
@@ -63,6 +66,11 @@ class Sina_news_scrapy(News_scrapy):
         return data
 
 class Sohu_news_scrapy(News_scrapy):
+    name = 'Sohu'
+
+    def __init__(self):
+        super(Sohu_news_scrapy,self).__init__(self.name)
+        pass
 
     def url_construct(self):
         today = time.strftime('%Y-%m-%d', time.localtime())
@@ -71,7 +79,7 @@ class Sohu_news_scrapy(News_scrapy):
         return url
 
     def get_data(self):
-        self.first_datar.encoding='utf-8'
+        self.first_data.encoding='utf-8'
         t = self.first_data.text[16:]
         t = t.replace('category', '\"category\"')
         t = t.replace('item', '\"item\"')
@@ -88,6 +96,43 @@ class Sohu_news_scrapy(News_scrapy):
             data.append(dict)
         return  data
 
+class NetEase_news_scrapy(News_scrapy):
+    name = 'NetEase'
+
+    def __init__(self):
+        super(NetEase_news_scrapy,self).__init__(self.name)
+        pass
+
+    def url_construct(self):
+        url= "http://news.163.com/special/0001220O/news_json.js?"+str(random.random())
+        return url
+
+    def get_data(self):
+        t = self.first_data.text
+        t = t[9:len(t)-1]
+
+        latest = MongoDB.MongoDB.get_latest(self.name)
+        latest_title = latest.get('title')
+        news_list = json.loads(t).get("news")[0]
+        i = 0
+        data = []
+        while i < 50:
+            data = news_list[i]
+            if data.get('t') == latest.get('title'):
+                break
+
+            title = data.get('t')
+            url = data.get('l')
+            news_time = data.get('p')
+
+            dict = {}
+            dict['title'] = title
+            dict['url'] = url
+            dict['time'] = news_time
+            data.append(dict)
+            i += 1
+
+        return data
 
 
 
