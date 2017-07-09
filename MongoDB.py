@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+import json
 
 #实现对数据库类的封装
 class MongoDB(object):
@@ -24,48 +25,24 @@ class MongoDB(object):
         # for item in cls.__db.news_cla.find():
         #     print(item)
 
+        new_data.reverse()
+        # if len(latest) == 0:
+        for data in new_data:
+            cls.__db.news_cla.update({"from": web_name}, {'$push': {"data": data}})
+
+        # cls.__db.news_cla.remove()
+        for item in cls.__db.news_cla.find():
+            print(item)
+
+    @classmethod
+    def get_latest(cls, web_name):
+        if cls.__db is None:
+            client = MongoClient('127.0.0.1', 27017)
+            cls.__db = client.news_list
+            print("new connect to news_list")
+
         latest = None
         for item in cls.__db.news_cla.find({'from': web_name}, {'data': {'$slice': [-1, 1]}}):
             latest = str(item)
 
-        latest = latest.split('[')[1]
-        latest = latest.split(']')[0]
-        # print(latest)
-
-        new_data.reverse()
-        if len(latest) == 0:
-            for data in new_data:
-                cls.__db.news_cla.update({"from": web_name}, {'$push': {"data": data}})
-        else:
-            flag = False
-            for data in new_data:
-                str_data = str(data).replace('"', "'")
-                if str_data == latest:
-                    flag = True
-                    break
-            if flag == False:
-                for data in new_data:
-                    cls.__db.news_cla.update({"from": web_name}, {'$push': {"data": data}})
-            else:
-                save = False
-                for data in new_data:
-                    str_data = str(data).replace('"', "'")
-                    if str_data == latest:
-                        save = True
-                        continue
-                    elif save == True:
-                        cls.__db.news_cla.update({"from": web_name}, {'$push': {"data": data}})
-
-        # cls.__db.news_cla.remove()
-        # for item in cls.__db.news_cla.find():
-        #     print(item)
-
-    # def get_latest(self, web_name):
-    #     latest = None
-    #     for item in self.__db.news_cla.find({'from': web_name}, {'data': {'$slice': [-1, 1]}}):
-    #         latest = str(item)
-    #
-    #     latest = latest.split('[')[1]
-    #     latest = latest.split(']')[0]
-    #     # print(latest)
-    #     return latest
+        return json.loads(latest.split('[')[1].split(']')[0].replace("'", '"'))
