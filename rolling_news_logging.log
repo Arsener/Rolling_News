@@ -1,9 +1,19 @@
-Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
-Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
-Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.sohu.com
-Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 395] DEBUG http://news.sohu.com:80 "GET /_scroll_newslist/20170710/news.inc HTTP/1.1" 200 29907
-Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499664963&r=0.05454295288929045 HTTP/1.1" 200 314
-Mon, 10 Jul 2017 13:46:03 mylog.py[line: 18] INFO request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499664963&r=0.05454295288929045 success
-Mon, 10 Jul 2017 13:46:03 mylog.py[line: 18] INFO request http://news.sohu.com/_scroll_newslist/20170710/news.inc success
-Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.3752373925493159 HTTP/1.1" 200 None
-Mon, 10 Jul 2017 13:46:03 mylog.py[line: 18] INFO request http://news.163.com/special/0001220O/news_json.js?0.3752373925493159 success
+Mon, 10 Jul 2017 17:00:37 mylog.py[line: 18] INFO get_latest:new connect to test
+Mon, 10 Jul 2017 17:00:37 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 17:00:37 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 17:00:37 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.34229999575696846 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 17:00:37 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499634037&r=0.7267175081475249 HTTP/1.1" 200 3217
+Mon, 10 Jul 2017 17:00:37 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499634037&r=0.7267175081475249 success
+Mon, 10 Jul 2017 17:00:37 mylog.py[line: 18] INFO Sina:create a new base info
+Mon, 10 Jul 2017 17:00:37 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.34229999575696846 success
+Mon, 10 Jul 2017 17:00:37 mylog.py[line: 18] INFO Sina:store new data success
+Mon, 10 Jul 2017 17:00:39 mylog.py[line: 18] INFO NetEase:create a new base info
+Mon, 10 Jul 2017 17:00:39 mylog.py[line: 18] INFO NetEase:store new data success
+Mon, 10 Jul 2017 17:01:39 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 17:01:39 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 17:01:39 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.3541214978979649 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 17:01:39 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499676406&r=0.3507696761386745 HTTP/1.1" 200 170
+Mon, 10 Jul 2017 17:01:39 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499676406&r=0.3507696761386745 success
+Mon, 10 Jul 2017 17:01:39 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 17:01:39 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.3541214978979649 success
+Mon, 10 Jul 2017 17:01:41 mylog.py[line: 18] INFO NetEase:new data is none

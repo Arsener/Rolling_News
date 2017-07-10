@@ -1,16 +1,16 @@
 # encoding: utf-8
 import random,time,json
-import MongoDB
+import mongoDB
 from urllib.parse import urlencode
-from News_scrapy import News_scrapy
-from Requests_c import Requests_c
+from news_scrapy import News_scrapy
+from requests_c import Requests_c
 
 class Sina_news_scrapy(News_scrapy):
     name = 'Sina'
 
     def __init__(self):
         super(Sina_news_scrapy,self).__init__(self.name)
-        self.last_time=int(time.time())-600  #每次都改变
+        self.last_time=int(time.time())-43200  #第一次运行先获取12小时之前到现在的所有news
 
 
     def url_construct(self):
@@ -29,14 +29,17 @@ class Sina_news_scrapy(News_scrapy):
               "r":''
         }
         url_param['r']=random.random()
-        url_param['last_time']=str(self.last_time)
+        latest = mongoDB.MongoDB.get_latest(self.name)
+        if latest['title']=='none':
+            url_param['last_time'] = str(self.last_time)
+        else:
+            url_param['last_time'] = int(time.mktime(time.strptime(latest['time'],'%Y-%m-%d %H:%M:%S')))
         url="http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?"+urlencode(url_param)
         return url
 
 
 
     def get_data(self):
-        print(type(self.first_data))
         self.first_data.encoding = 'gbk'
         t = self.first_data.text[15:-1]
         t = t.replace('serverSeconds', '\"serverSeconds\"')
@@ -57,8 +60,6 @@ class Sina_news_scrapy(News_scrapy):
         t = t.replace('\'', '\"')
         js = json.loads(t)
         list=js['list']
-        if list:
-            self.last_time = list[0]['time']
         data=[]
         for i in range(len(list)):
             list[i].pop('channel')
@@ -90,7 +91,7 @@ class Sohu_news_scrapy(News_scrapy):
         te = json.loads(t)
         year = time.strftime('%Y', time.localtime())
 
-        latest = MongoDB.MongoDB.get_latest(self.name)
+        latest = mongoDB.MongoDB.get_latest(self.name)
         latest_title = latest.get('title')
 
         data = []
@@ -122,7 +123,7 @@ class NetEase_news_scrapy(News_scrapy):
         t = self.first_data.text
         t = t[9:len(t)-1]
 
-        latest = MongoDB.MongoDB.get_latest(self.name)
+        latest = mongoDB.MongoDB.get_latest(self.name)
         latest_title = latest.get('title')
         news_list = json.loads(t).get("news")[0]
 
