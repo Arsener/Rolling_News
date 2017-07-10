@@ -3,6 +3,7 @@ import random,time,json
 import mongoDB
 from urllib.parse import urlencode
 from news_scrapy import News_scrapy
+from bs4 import BeautifulSoup
 from requests_c import Requests_c
 
 class Sina_news_scrapy(News_scrapy):
@@ -144,7 +145,44 @@ class NetEase_news_scrapy(News_scrapy):
 
         return data
 
+class Ifeng_news_scrapy(News_scrapy):
+    name = 'ifeng'
 
+    def __init__(self):
+        super(Ifeng_news_scrapy,self).__init__(self.name)
+        pass
+
+    def url_construct(self):
+        url= "http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml"
+        return url
+
+    def get_data(self):
+        t = self.first_data.text
+        bsObj = BeautifulSoup(t,'html.parser')
+        #http://news.ifeng.com/a/20170710/51407729_0.shtml
+        news_list = bsObj.find('div', {'class' : 'newsList'}).find_all('li')
+
+        latest = mongoDB.MongoDB.get_latest(self.name)
+        latest_title = latest.get('title')
+
+        data = []
+        for news in news_list:
+            detail = news.find('a')
+            if detail.get_text() == latest_title:
+                break
+
+            title = detail.get_text()
+            url = detail['href']
+            news_time = news.find('h4').get_text()
+            news_time = '2017-' + news_time.replace('/', '-')
+
+            dict = {}
+            dict['title'] = title
+            dict['url'] = url
+            dict['time'] = news_time
+            data.append(dict)
+
+        return data
 
 
 
