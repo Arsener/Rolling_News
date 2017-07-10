@@ -6,7 +6,7 @@ class News_scrapy(object):
     '''
     def __init__(self,name):
         self.name=name         #name:从哪个门户
-        self.first_data = ''   #从url_request中获得的原始数据，需要在get_data中解析
+        self.first_data = ''   #从url_request中获得的原始数据response类型，需要在get_data中解析
         self.datas=''          #从get_data中获取，传递给filter_data和classify_data进一步处理
 
 
