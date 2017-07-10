@@ -10,11 +10,12 @@ class Sina_news_scrapy(News_scrapy):
 
     def __init__(self):
         super(Sina_news_scrapy,self).__init__(self.name)
-        self.last_time=int(time.time()) - 600  #每次都改变
+        self.last_time=int(time.time())-60  #每次都改变
+
 
     def url_construct(self):
         url_param={
-              "col":89,
+              "col":90,
               "spec":'',
               "date":'',     #第一次打开无此参数，以后每次刷新有这个参数
               "ch":'01',
@@ -61,7 +62,6 @@ class Sina_news_scrapy(News_scrapy):
         list=js['list']
         if list:
             self.last_time = list[0]['time']
-
         data=[]
         for i in range(len(list)):
             list[i].pop('channel')
