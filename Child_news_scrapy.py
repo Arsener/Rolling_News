@@ -10,9 +10,9 @@ class Sina_news_scrapy(News_scrapy):
 
     def __init__(self):
         super(Sina_news_scrapy,self).__init__(self.name)
-        self.last_time=int(time.time())  #每次都改变
+        self.last_time=int(time.time()) - 600  #每次都改变
 
-    def url_contruct(self):
+    def url_construct(self):
         url_param={
               "col":89,
               "spec":'',
@@ -28,13 +28,17 @@ class Sina_news_scrapy(News_scrapy):
               "r":''
         }
         url_param['r']=random.random()
-        url_param['last_time']=self.last_time
+        url_param['last_time']=str(self.last_time)
         url="http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?"+urlencode(url_param)
+        print('===')
+        print(url)
+        print('===')
         return url
 
 
 
     def get_data(self):
+        print(type(self.first_data))
         self.first_data.encoding = 'gbk'
         t = self.first_data.text[15:-1]
         t = t.replace('serverSeconds', '\"serverSeconds\"')
@@ -55,6 +59,9 @@ class Sina_news_scrapy(News_scrapy):
         t = t.replace('\'', '\"')
         js = json.loads(t)
         list=js['list']
+        if list:
+            self.last_time = list[0]['time']
+
         data=[]
         for i in range(len(list)):
             list[i].pop('channel')
@@ -66,7 +73,7 @@ class Sina_news_scrapy(News_scrapy):
         return data
 
 class Sohu_news_scrapy(News_scrapy):
-    name = 'Sohu'
+    name = 'sohu'
 
     def __init__(self):
         super(Sohu_news_scrapy,self).__init__(self.name)
@@ -85,8 +92,15 @@ class Sohu_news_scrapy(News_scrapy):
         t = t.replace('item', '\"item\"')
         te = json.loads(t)
         year = time.strftime('%Y', time.localtime())
+
+        latest = MongoDB.MongoDB.get_latest(self.name)
+        latest_title = latest.get('title')
+
         data = []
         for item in te['item']:
+            if item[1] == latest_title:
+                break
+
             dict = {}
             dict['title'] = item[1]
             dict['url'] = item[2]

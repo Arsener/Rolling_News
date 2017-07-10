@@ -44,5 +44,7 @@ class MongoDB(object):
         latest = None
         for item in cls.__db.news_cla.find({'from': web_name}, {'data': {'$slice': [-1, 1]}}):
             latest = str(item)
-
-        return json.loads(latest.split('[')[1].split(']')[0].replace("'", '"'))
+        if latest is not None:
+            return json.loads(latest.split('[')[1].split(']')[0].replace("'", '"'))
+        else:
+            return {'title':'none'}

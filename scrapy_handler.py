@@ -61,6 +61,7 @@ class Work(threading.Thread):
             try:
                 if not self.work_queue.empty():
                     do_works, args = self.work_queue.get(block=False)
+                    print(args)
                     if isinstance(args, list) or isinstance(args, tuple):
                         do_works(*args)
                     else:
