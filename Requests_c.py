@@ -1,5 +1,6 @@
 # encoding: utf-8
 import requests
+import mylog
 class Requests_c (object):
     '''
     recept url,handle the wrong data and return right data
@@ -13,7 +14,8 @@ class Requests_c (object):
             if re.status_code==200:
                 firstdata=re
                 print('Right request ' + str(self.url))
-                return firstdata
+                mylog.logInfo('request %s success' %str(self.url))
+                return firstdata   #response类型
             else:
                 print(re.status_code+' error')
                 return None

@@ -2,7 +2,7 @@
 import logging
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(filename)s[line: %(lineno)d] %(levelname)s %(message)s',
-                    datefmt='%a, %d %b %Y %H:%M:%S',
+                    datefmt='%a, %d %b %Y %H:%M:%S',       #log格式：时间+log文件名+line:行号+级别+信息
                     filename='rolling_news_logging.log',
                     filemode='w')
 console = logging.StreamHandler()
