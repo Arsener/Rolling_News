@@ -1,5 +1,5 @@
 # encoding: utf-8
-from  child_news_scrapy import *
+from  child_news_scrapy import Sina_news_scrapy, NetEase_news_scrapy, Sohu_news_scrapy
 import scrapy_handler
 import mongoDB
 from config import *
@@ -44,12 +44,6 @@ class Console():
             sohu.url_request(url)
             data = sohu.get_data()
             mongoDB.MongoDB.store('sohu', data)
-        elif web_name == 'ifeng':
-            ifeng = Ifeng_news_scrapy()
-            url = ifeng.url_construct()
-            ifeng.url_request(url)
-            data = ifeng.get_data()
-            mongoDB.MongoDB.store('ifeng', data)
 
     def mlti_thread(self,web_list):        #多线程处理
         numthread = NUMTHREAD
