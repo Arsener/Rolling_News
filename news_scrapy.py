@@ -1,5 +1,5 @@
 # encoding: utf-8
-import Requests_c
+import requests_c
 class News_scrapy(object):
     '''
     the parent of all the class
@@ -14,7 +14,7 @@ class News_scrapy(object):
         pass
 
     def url_request(self,url):
-        re = Requests_c.Requests_c(url)
+        re = requests_c.Requests_c(url)
         self.first_data = re.url_handler()
 
     def get_data(self):   #每个子类中分别重写

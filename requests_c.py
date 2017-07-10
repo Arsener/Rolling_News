@@ -13,14 +13,13 @@ class Requests_c (object):
             re=requests.get(self.url)
             if re.status_code==200:
                 firstdata=re
-                print('Right request ' + str(self.url))
-                mylog.logInfo('request %s success' %str(self.url))
+                mylog.logInfo('Request %s success' %str(self.url))
                 return firstdata   #response类型
             else:
-                print(re.status_code+' error')
+                mylog.logInfo(str(self.url)+' '+re.status_code+'error')
                 return None
         except Exception as e:
-            print(str(e))
+            mylog.logInfo(str(e))
         finally:
             pass
 

@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(filename)s[line: 
                     datefmt='%a, %d %b %Y %H:%M:%S',       #log格式：时间+log文件名+line:行号+级别+信息
                     filename='rolling_news_logging.log',
                     filemode='w')
-console = logging.StreamHandler()
+console = logging.StreamHandler()  #输出到控制台
 console.setLevel(logging.INFO)
 formatter = logging.Formatter('%(asctime)s - %(name)s : %(levelname)-4s %(message)s')
 console.setFormatter(formatter)

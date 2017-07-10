@@ -2,6 +2,7 @@
 import threading
 import queue
 import time
+import mylog
 
 class ScrapyException(Exception):
     pass
@@ -61,7 +62,6 @@ class Work(threading.Thread):
             try:
                 if not self.work_queue.empty():
                     do_works, args = self.work_queue.get(block=False)
-                    print(args)
                     if isinstance(args, list) or isinstance(args, tuple):
                         do_works(*args)
                     else:
@@ -71,5 +71,5 @@ class Work(threading.Thread):
                 else:
                     break
             except Exception as e:
-                print (str(e))
+                mylog.logInfo(str(e))
                 break
