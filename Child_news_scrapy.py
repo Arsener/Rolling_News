@@ -10,7 +10,7 @@ class Sina_news_scrapy(News_scrapy):
 
     def __init__(self):
         super(Sina_news_scrapy,self).__init__(self.name)
-        self.last_time=int(time.time())-60  #每次都改变
+        self.last_time=int(time.time())-600  #每次都改变
 
 
     def url_construct(self):
@@ -31,9 +31,6 @@ class Sina_news_scrapy(News_scrapy):
         url_param['r']=random.random()
         url_param['last_time']=str(self.last_time)
         url="http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?"+urlencode(url_param)
-        print('===')
-        print(url)
-        print('===')
         return url
 
 

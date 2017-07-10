@@ -1,3 +1,9 @@
-Mon, 10 Jul 2017 11:47:05 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
-Mon, 10 Jul 2017 11:47:05 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=89&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499657825&r=0.5834845311844022 HTTP/1.1" 200 880
-Mon, 10 Jul 2017 11:47:05 mylog.py[line: 18] INFO request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=89&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499657825&r=0.5834845311844022 success
+Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.sohu.com
+Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 395] DEBUG http://news.sohu.com:80 "GET /_scroll_newslist/20170710/news.inc HTTP/1.1" 200 29907
+Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499664963&r=0.05454295288929045 HTTP/1.1" 200 314
+Mon, 10 Jul 2017 13:46:03 mylog.py[line: 18] INFO request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499664963&r=0.05454295288929045 success
+Mon, 10 Jul 2017 13:46:03 mylog.py[line: 18] INFO request http://news.sohu.com/_scroll_newslist/20170710/news.inc success
+Mon, 10 Jul 2017 13:46:03 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.3752373925493159 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 13:46:03 mylog.py[line: 18] INFO request http://news.163.com/special/0001220O/news_json.js?0.3752373925493159 success

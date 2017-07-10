@@ -1,1 +1,7 @@
+#线程数
 NUMTHREAD=5
+#Mongodb 参数
+MONGO_URL='127.0.0.1'
+MONGO_PORT=27017
+MONGO_DB='test'
+MONGO_TABLE='runoob'
