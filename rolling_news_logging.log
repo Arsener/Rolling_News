@@ -1,97 +1,959 @@
-Mon, 10 Jul 2017 17:24:33 mylog.py[line: 18] INFO get_latest:new connect to news_list
-Mon, 10 Jul 2017 17:24:33 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
-Mon, 10 Jul 2017 17:24:33 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
-Mon, 10 Jul 2017 17:24:33 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499635473&r=0.0570920618996299 HTTP/1.1" 200 3214
-Mon, 10 Jul 2017 17:24:33 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499635473&r=0.0570920618996299 success
-Mon, 10 Jul 2017 17:24:33 mylog.py[line: 18] INFO Sina:create a new base info
-Mon, 10 Jul 2017 17:24:34 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.8018789470111112 HTTP/1.1" 200 None
-Mon, 10 Jul 2017 17:24:34 mylog.py[line: 18] INFO Sina:store new data success
-Mon, 10 Jul 2017 17:24:34 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.8018789470111112 success
-Mon, 10 Jul 2017 17:24:34 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
-Mon, 10 Jul 2017 17:24:34 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 14523
-Mon, 10 Jul 2017 17:24:34 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.005499825276432214, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:24:34 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007544832917494781, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:24:35 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008007541893220593, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:24:35 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011407333893698, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:24:35 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004375746141661556, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:24:35 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006876172508325303, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG CP932 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.1505241304091498
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.0555787695431557
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06864114513111048
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.01388653209467426
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.07936023700588901
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06217282133514438
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.0955994638086497
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.13187083406133032
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG CP932 not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
-Mon, 10 Jul 2017 17:24:35 mylog.py[line: 18] INFO NetEase:create a new base info
-Mon, 10 Jul 2017 17:24:35 mylog.py[line: 18] INFO NetEase:store new data success
-Mon, 10 Jul 2017 17:25:35 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
-Mon, 10 Jul 2017 17:25:35 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
-Mon, 10 Jul 2017 17:25:36 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.7057710897305639 HTTP/1.1" 200 None
-Mon, 10 Jul 2017 17:25:36 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499678464&r=0.6409560844293378 HTTP/1.1" 200 170
-Mon, 10 Jul 2017 17:25:36 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499678464&r=0.6409560844293378 success
-Mon, 10 Jul 2017 17:25:36 mylog.py[line: 18] INFO Sina:new data is none
-Mon, 10 Jul 2017 17:25:36 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.7057710897305639 success
-Mon, 10 Jul 2017 17:25:36 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
-Mon, 10 Jul 2017 17:25:36 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 14523
-Mon, 10 Jul 2017 17:25:36 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.005499825276432214, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:25:36 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007544832917494781, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:25:36 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008007541893220593, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:25:37 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011407333893698, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:25:37 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004375746141661556, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:25:37 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006876172508325303, below negative shortcut threshhold 0.05
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG CP932 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.1505241304091498
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.0555787695431557
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06864114513111048
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.01388653209467426
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.07936023700588901
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06217282133514438
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.0955994638086497
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.13187083406133032
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG CP932 not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
-Mon, 10 Jul 2017 17:25:37 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:35:02 mylog.py[line: 18] INFO get_latest:new connect to news_list
+Mon, 10 Jul 2017 23:35:02 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:35:02 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:35:02 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:35:02 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.9243910899646172 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:35:02 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:35:02 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.26563160301770994 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:35:02 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.26563160301770994 success
+Mon, 10 Jul 2017 23:35:02 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:35:02 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:35:02 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:35:02 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.9243910899646172 success
+Mon, 10 Jul 2017 23:35:02 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:35:02 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:35:02 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:35:02 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:35:03 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:35:03 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:35:03 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:35:03 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:35:03 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:36:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:36:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:36:03 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:36:03 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.9571002742302688 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:36:03 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.5276022480758881 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:36:03 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.5276022480758881 success
+Mon, 10 Jul 2017 23:36:03 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:36:03 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.9571002742302688 success
+Mon, 10 Jul 2017 23:36:03 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:36:03 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:36:03 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:36:03 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:36:04 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:36:04 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:36:04 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:36:04 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:36:04 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:36:04 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:36:05 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:36:05 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:37:05 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:37:05 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:37:05 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:37:05 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.5752150680207553 HTTP/1.1" 200 172
+Mon, 10 Jul 2017 23:37:05 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.5752150680207553 success
+Mon, 10 Jul 2017 23:37:05 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:37:05 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.8892604643401073 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:37:05 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.8892604643401073 success
+Mon, 10 Jul 2017 23:37:05 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:37:05 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:37:05 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:37:05 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:37:05 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:37:05 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:37:06 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:37:06 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:37:06 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:37:06 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:37:06 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:37:06 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:38:06 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:38:06 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:38:06 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:38:06 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.43353759614798537 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:38:06 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.43353759614798537 success
+Mon, 10 Jul 2017 23:38:06 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:38:06 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.6149626538256163 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:38:06 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:38:06 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:38:06 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:38:06 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.6149626538256163 success
+Mon, 10 Jul 2017 23:38:06 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:38:06 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:38:07 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:38:07 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:38:07 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:38:07 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:38:07 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:38:08 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:38:08 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:39:08 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:39:08 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:39:08 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:39:08 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:39:08 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.48170465415860897 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:39:08 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:39:08 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.7296895294530065 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:39:08 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:39:08 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.7296895294530065 success
+Mon, 10 Jul 2017 23:39:08 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:39:08 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.48170465415860897 success
+Mon, 10 Jul 2017 23:39:08 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:39:08 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:39:08 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:09 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:09 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:09 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:09 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:09 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:39:09 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:40:09 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:40:09 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:40:09 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:40:09 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.5166475622090766 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:40:09 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.53740612464967 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:40:09 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.5166475622090766 success
+Mon, 10 Jul 2017 23:40:09 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:40:09 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.53740612464967 success
+Mon, 10 Jul 2017 23:40:09 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:40:09 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:40:09 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:40:09 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:40:09 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:40:10 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:10 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:10 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:10 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:11 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:11 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:40:11 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:41:11 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:41:11 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:41:11 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.7220308552484392 HTTP/1.1" 200 172
+Mon, 10 Jul 2017 23:41:11 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.7220308552484392 success
+Mon, 10 Jul 2017 23:41:11 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:41:11 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.11439866265001508 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:11 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:41:11 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.11439866265001508 success
+Mon, 10 Jul 2017 23:41:11 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:41:11 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:11 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:41:11 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:41:11 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:41:12 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:12 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:12 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:12 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:13 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:13 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:13 mylog.py[line: 18] INFO NetEase:new data is none
+Mon, 10 Jul 2017 23:42:13 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:42:13 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:42:13 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:42:13 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:42:13 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.6855481218516148 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:42:13 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.9708869886175564 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:42:13 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.6855481218516148 success
+Mon, 10 Jul 2017 23:42:13 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:42:13 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:42:13 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:42:13 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.9708869886175564 success
+Mon, 10 Jul 2017 23:42:13 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:42:13 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:42:14 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:14 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:14 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:14 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:14 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:15 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:42:15 mylog.py[line: 18] INFO NetEase:new data is none
+2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:42:02 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:42:02 mylog.py[line: 18] INFO NetEase:create a new base info
+Mon, 10 Jul 2017 23:42:02 mylog.py[line: 18] INFO NetEase:store new data success
+95] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:51 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:41:51 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:41:51 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:41:52 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:52 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:52 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:52 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:53 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:53 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:53 mylog.py[line: 18] INFO NetEase:new data is none
+Jul 2017 23:41:46 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:41:46 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:41:46 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:41:46 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.21373446890595715 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:41:46 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.21373446890595715 success
+Mon, 10 Jul 2017 23:41:46 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:41:46 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.34836022596419647 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:46 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:46 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:41:46 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:41:46 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.34836022596419647 success
+Mon, 10 Jul 2017 23:41:46 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:41:46 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:41:47 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:47 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:47 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:47 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:47 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:48 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:48 mylog.py[line: 18] INFO NetEase:new data is none
+ober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:38:02 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:38:02 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:38:02 charsetgroupprober.pMon, 10 Jul 2017 23:38:16 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:38:16 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:38:16 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:38:16 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.6836897346241326 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:38:16 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offseMon, 10 Jul 2017 23:39:02 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:39:02 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:39:02 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:39:02 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499657942&r=0.5469207069206691 HTTP/1.1" 200 3207
+Mon, 10 Jul 2017 23:39:02 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499657942&r=0.5469207069206691 success
+Mon, 10 Jul 2017 23:39:02 mylog.py[line: 18] INFO Sina:create a new base info
+Mon, 10 Jul 2017 23:39:02 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:39:02 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:39:02 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.42762943039133705 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:39:02 mylog.py[line: 18] INFO ifeng:create a new base info
+Mon, 10 Jul 2017 23:39:02 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.42762943039133705 success
+Mon, 10 Jul 2017 23:39:02 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:39:02 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:39:03 mylog.py[line: 18] INFO Sina:store new data success
+Mon, 10 Jul 2017 23:39:03 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:03 mylog.py[line: 18] INFO ifeng:store new data success
+Mon, 10 Jul 2017 23:39:03 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:03 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:03 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:03 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:03 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:39:04 charsetgroupprober.pMon, 10 Jul 2017 23:39:17 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:39:17 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:39:17 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:39:17 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.6177026323276451 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:39:17 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499696485&r=0.6177026323276451 success
+Mon, 10 Jul 2017 23:39:17 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:39:18 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /lisMon, 10 Jul 2017 23:40:04 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:40:04 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:40:04 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:40:04 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499658004&r=0.8033259290848062 HTTP/1.1" 200 3204
+Mon, 10 Jul 2017 23:40:04 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499658004&r=0.8033259290848062 success
+Mon, 10 Jul 2017 23:40:04 mylog.py[line: 18] INFO Sina:create a new base info
+Mon, 10 Jul 2017 23:40:04 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:40:04 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.9994138895022964 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:40:04 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:40:04 mylog.py[line: 18] INFO ifeng:create a new base info
+Mon, 10 Jul 2017 23:40:04 mylog.py[line: 18] INFO Sina:store new data success
+Mon, 10 Jul 2017 23:40:04 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.9994138895022964 success
+Mon, 10 Jul 2017 23:40:04 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:40:04 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:40:04 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:05 mylog.py[line: 18] INFO ifeng:store new data success
+Mon, 10 Jul 2017 23:40:05 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:05 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:05 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:05 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:05 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:40:06 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 JuMon, 10 Jul 2017 23:40:19 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:40:19 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:40:19 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:40:19 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.68967797335731 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:40:19 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.68967797335731 success
+Mon, 10 Jul 2017 23:40:19 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:40:19 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.5193486583438872 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:40:19 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:40:19 mylog.py[line: 18] INFO ReMon, 10 Jul 2017 23:41:06 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:41:06 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.09608247366994338 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:06 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:41:06 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:41:06 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499658066&r=0.30861320307971496 HTTP/1.1" 200 3204
+Mon, 10 Jul 2017 23:41:06 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499658066&r=0.30861320307971496 success
+Mon, 10 Jul 2017 23:41:06 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.09608247366994338 success
+Mon, 10 Jul 2017 23:41:06 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:41:06 mylog.py[line: 18] INFO Sina:create a new base info
+Mon, 10 Jul 2017 23:41:06 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:41:06 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:06 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:41:06 mylog.py[line: 18] INFO ifeng:create a new base info
+Mon, 10 Jul 2017 23:41:07 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:07 mylog.py[line: 18] INFO Sina:store new data success
+Mon, 10 Jul 2017 23:41:07 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:07 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:07 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:07 mylog.py[line: 18] INFO ifeng:store new data success
+Mon, 10 Jul 2017 23:41:07 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:07 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:08 charsetgroupprober.py[line: 100] DEBUMon, 10 Jul 2017 23:41:21 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:41:21 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:41:21 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:41:21 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.8875393322805379 HTTP/1.1" 200 172
+Mon, 10 Jul 2017 23:41:21 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.8875393322805379 success
+Mon, 10 Jul 2017 23:41:21 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:41:21 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.39568397042876546 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:21 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.39568397042876546 success
+Mon, 10 Jul 2017 23:41:21 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:41:21 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:21 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese probMon, 10 Jul 2017 23:42:08 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:42:08 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:42:08 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:42:08 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499658128&r=0.0830754491946869 HTTP/1.1" 200 3204
+Mon, 10 Jul 2017 23:42:08 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499658128&r=0.0830754491946869 success
+Mon, 10 Jul 2017 23:42:08 mylog.py[line: 18] INFO Sina:create a new base info
+Mon, 10 Jul 2017 23:42:08 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:42:08 mylog.py[line: 18] INFO Sina:store new data success
+Mon, 10 Jul 2017 23:42:08 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.835059919399755 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:42:08 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:42:08 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.835059919399755 success
+Mon, 10 Jul 2017 23:42:08 mylog.py[line: 18] INFO ifeng:create a new base info
+Mon, 10 Jul 2017 23:42:08 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:42:08 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:42:09 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:09 mylog.py[line: 18] INFO ifeng:store new data success
+Mon, 10 Jul 2017 23:42:09 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:09 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:09 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:09 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:09 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:42:10 mylog.py[line: 18] INFO NetEase:create a new base info
+Mon, 10 Jul 2017 23:42:10 mylog.py[line: 18] INFO NetEase:store new data success
+3:41:44 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:45 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:45 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:45 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:45 mylog.py[line: 18] INFO NetEase:new data is none
+NetEase:neMon, 10 Jul 2017Mon, 10 Jul 2017 23:41:42 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:41:42 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:41:42 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:41:42 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.8798397910429875 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:41:42 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.8798397910429875 success
+Mon, 10 Jul 2017 23:41:42 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:41:42 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.16823633933322935 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:42 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:42 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.16823633933322935 success
+Mon, 10 Jul 2017 23:41:42 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:41:42 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:41:42 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:41:42 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:41:43 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:43 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:44 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:44 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:44 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:44 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:44 mylog.py[line: 18] INFO NetEase:Mon, 10 Jul 2017 23:41:52 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:41:52 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:41:52 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:41:52 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.93638200914448 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:41:52 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.93638200914448 success
+Mon, 10 Jul 2017 23:41:52 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:41:52 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.5990829145372528 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:52 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:52 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:41:52 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:41:52 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.5990829145372528 success
+Mon, 10 Jul 2017 23:41:52 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:41:52 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:41:53 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:54 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:54 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:54 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:54 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:55 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:55 mylog.py[line: 18] INFO NetEase:new data is none
+s noneMoMon, 10 Jul 2017 23:41:13 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:41:13 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:41:13 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:41:13 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.23549718305215628 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:13 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.14489614327253886 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:41:13 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.14489614327253886 success
+Mon, 10 Jul 2017 23:41:13 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:41:13 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:41:13 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.23549718305215628 success
+Mon, 10 Jul 2017 23:41:13 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:41:13 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:41:13 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:41:13 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:41:14 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:14 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:14 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:15 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:15 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:15 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:41:15 mylog.py[line: 18] INFO NetEase:new data is Mon, 1Mon, 10 Jul 2017 23:42:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Mon, 10 Jul 2017 23:42:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Mon, 10 Jul 2017 23:42:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Mon, 10 Jul 2017 23:42:15 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.36931451706383855 HTTP/1.1" 200 173
+Mon, 10 Jul 2017 23:42:15 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499698277&r=0.36931451706383855 success
+Mon, 10 Jul 2017 23:42:15 mylog.py[line: 18] INFO Sina:new data is none
+Mon, 10 Jul 2017 23:42:15 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:42:15 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Mon, 10 Jul 2017 23:42:15 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.7903318240189591 HTTP/1.1" 200 None
+Mon, 10 Jul 2017 23:42:15 mylog.py[line: 18] INFO ifeng:new data is none
+Mon, 10 Jul 2017 23:42:15 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.7903318240189591 success
+Mon, 10 Jul 2017 23:42:15 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
+Mon, 10 Jul 2017 23:42:15 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 18521
+Mon, 10 Jul 2017 23:42:16 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.00539994212109952, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:16 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007626850114727219, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:16 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008096401482087819, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:16 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011451600029901084, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:16 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.004407252340296444, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:16 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.006815866991388687, below negative shortcut threshhold 0.05
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15106700001385903
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.05547255410804791
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06751910948471175
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013522862256452457
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.08089908902139549
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06213868090777094
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09595518114822162
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.1324659299012368
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG CP932 not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
+Mon, 10 Jul 2017 23:42:17 mylog.py[line: 18] INFO NetEase:new data i
