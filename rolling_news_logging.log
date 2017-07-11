@@ -53,3 +53,19 @@ Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese co
 Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
 Tue, 11 Jul 2017 00:22:09 mylog.py[line: 18] INFO NetEase:create a new base info
 Tue, 11 Jul 2017 00:22:09 mylog.py[line: 18] INFO NetEase:store new data success
+Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO get_latest:new connect to test
+Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.qq.com
+Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.9830234120391075 HTTP/1.1" 200 None
+Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.9830234120391075 success
+Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 395] DEBUG http://roll.news.qq.com:80 "POST /interface/roll.php?0.1&cata=newsgn&site=news&date=&page=1&mode=1&of=json HTTP/1.1" 200 None
+Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Request http://roll.news.qq.com/interface/roll.php?0.1&cata=newsgn&site=news&date=&page=1&mode=1&of=json success
+Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Tencent:create a new base info
+Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499660475&r=0.885406982436902 HTTP/1.1" 200 3215
+Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499660475&r=0.885406982436902 success
+Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Sina:create a new base info
+Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Tencent:store new data success
+Tue, 11 Jul 2017 00:21:16 mylog.py[line: 18] INFO Sina:store new data success
+Tue, 11 Jul 2017 00:21:17 mylog.py[line: 18] INFO NetEase:create a new base info
+Tue, 11 Jul 2017 00:21:17 mylog.py[line: 18] INFO NetEase:store new data success
