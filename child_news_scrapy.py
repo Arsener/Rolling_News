@@ -4,6 +4,7 @@ import mongoDB
 from urllib.parse import urlencode
 from news_scrapy import News_scrapy
 from requests_c import Requests_c
+import re
 
 class Sina_news_scrapy(News_scrapy):
     name = 'Sina'
@@ -142,6 +143,44 @@ class NetEase_news_scrapy(News_scrapy):
             dict['time'] = news_time
             data.append(dict)
 
+        return data
+
+class Tencent_news_scrapy(News_scrapy):
+    name = 'Tencent'
+
+    def __init__(self):
+        super(Tencent_news_scrapy,self).__init__(self.name)
+        pass
+
+    def url_construct(self):
+        url = "http://roll.news.qq.com/interface/roll.php?0.1&cata=newsgn&site=news&date=&page=1&mode=1&of=json"
+        headers = {
+            'Host': 'roll.news.qq.com',
+            'Referer': 'http://roll.news.qq.com/',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+        }
+        return url,headers
+
+    def get_data(self):
+        js = json.loads(self.first_data.text)
+        info = js['data']['article_info']
+        titles = re.compile('.htm">(.*?)</a></li>').findall(info)
+        urls = re.compile('</span><a target="_blank" href="(.*?)">').findall(info)
+        times = re.compile('<span class="t-time">(.*?)</span><span class="t-tit">').findall(info)
+
+        latest = mongoDB.MongoDB.get_latest(self.name)
+        latest_title = latest.get('title')
+
+        data = []
+        year = time.strftime('%Y', time.localtime())
+        for i in range(len(titles)):
+            dict = {}
+            if titles[i] ==latest_title:
+                break
+            dict['title'] = titles[i]
+            dict['url'] = urls[i]
+            dict['time'] = year + '-' + times[i]
+            data.append(dict)
         return data
 
 

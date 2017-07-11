@@ -4,6 +4,6 @@ import time
 
 console = main_console.Console()
 while True:
-    web_list = ['Sina','NetEase']
+    web_list = ['Sina','NetEase','Tencent']
     console.mlti_thread(web_list)
     time.sleep(60)

@@ -8,9 +8,12 @@ class Requests_c (object):
     def __init__(self,url):
         self.url=url
 
-    def url_handler(self):
+    def url_handler(self,headers):
         try:
-            re=requests.get(self.url)
+            if headers:
+                re = requests.post(self.url, headers=headers)
+            else:
+                re=requests.get(self.url)
             if re.status_code==200:
                 firstdata=re
                 mylog.logInfo('Request %s success' %str(self.url))
