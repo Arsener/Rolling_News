@@ -39,37 +39,20 @@ class Sina_news_scrapy(News_scrapy):
         url="http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?"+urlencode(url_param)
         return url
 
-
-
     def get_data(self):
         self.first_data.encoding = 'gbk'
         t = self.first_data.text[15:-1]
-        t = t.replace('serverSeconds', '\"serverSeconds\"')
-        t = t.replace('path', '\"path\"')
-        t = t.replace('count', '\"count\"')
-        t = t.replace('offset_page', '\"offset_page\"')
-        t = t.replace('offset_num', '\"offset_num\"')
-        t = t.replace('title', '\"title\"')
-        t = t.replace('list', '\"list\"')
-        t = t.replace('id', '\"id\"')
-        t = t.replace('cType', '\"cType\"')
-        t = t.replace('channel', '\"channel\"')
-        t = t.replace('url', '\"url\"')
-        t = t.replace('type', '\"type\"')
-        t = t.replace('pic', '\"pic\"')
-        t = t.replace('time', '\"time\"')
-        t = t.replace('last_\"time\"', '\"last_time\"')
-        t = t.replace('\'', '\"')
-        js = json.loads(t)
-        list=js['list']
-        data=[]
-        for i in range(len(list)):
-            list[i].pop('channel')
-            list[i].pop('type')
-            list[i].pop('pic')
-            list[i]['time'] = time.localtime(list[i]['time'])
-            list[i]['time'] = time.strftime("%Y-%m-%d %H:%M:%S", list[i]['time'])
-            data.append(list[i])
+        titles = re.compile('},title : "(.*?)",url :').findall(t)
+        urls = re.compile('"http://news.sina.com.cn/(.*?).shtml').findall(t)
+        times = re.compile('time : (.*?)}').findall(t)
+        data = []
+        for i in range(len(titles)):
+            list = {}
+            list['title'] = titles[i]
+            list['url'] = 'http://news.sina.com.cn/' + urls[i] + '.shtml'
+            list['time'] = time.localtime(int(times[i]))
+            list['time'] = time.strftime("%Y-%m-%d %H:%M:%S", list['time'])
+            data.append(list)
         return data
 
 class Sohu_news_scrapy(News_scrapy):

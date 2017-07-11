@@ -1,71 +1,17 @@
-Tue, 11 Jul 2017 00:22:07 mylog.py[line: 18] INFO get_latest:new connect to news_list
-Tue, 11 Jul 2017 00:22:07 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
-Tue, 11 Jul 2017 00:22:07 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
-Tue, 11 Jul 2017 00:22:07 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
-Tue, 11 Jul 2017 00:22:07 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499660527&r=0.2151840293990941 HTTP/1.1" 200 3215
-Tue, 11 Jul 2017 00:22:07 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499660527&r=0.2151840293990941 success
-Tue, 11 Jul 2017 00:22:07 mylog.py[line: 18] INFO Sina:create a new base info
-Tue, 11 Jul 2017 00:22:07 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
-Tue, 11 Jul 2017 00:22:07 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
-Tue, 11 Jul 2017 00:22:07 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.5501785640721317 HTTP/1.1" 200 None
-Tue, 11 Jul 2017 00:22:07 mylog.py[line: 18] INFO ifeng:create a new base info
-Tue, 11 Jul 2017 00:22:07 mylog.py[line: 18] INFO ifeng:store new data success
-Tue, 11 Jul 2017 00:22:07 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.5501785640721317 success
-Tue, 11 Jul 2017 00:22:07 sjisprober.py[line: 61] DEBUG CP932 Japanese prober hit error at byte 130
-Tue, 11 Jul 2017 00:22:07 eucjpprober.py[line: 62] DEBUG EUC-JP Japanese prober hit error at byte 10768
-Tue, 11 Jul 2017 00:22:08 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.005555150293105338, below negative shortcut threshhold 0.05
-Tue, 11 Jul 2017 00:22:08 mylog.py[line: 18] INFO Sina:store new data success
-Tue, 11 Jul 2017 00:22:08 sbcharsetprober.py[line: 119] DEBUG ISO-8859-7 confidence = 0.007658893259677367, below negative shortcut threshhold 0.05
-Tue, 11 Jul 2017 00:22:08 sbcharsetprober.py[line: 119] DEBUG windows-1253 confidence = 0.008126334357283521, below negative shortcut threshhold 0.05
-Tue, 11 Jul 2017 00:22:08 sbcharsetprober.py[line: 119] DEBUG windows-1251 confidence = 0.011388047350031051, below negative shortcut threshhold 0.05
-Tue, 11 Jul 2017 00:22:08 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.0046178894705741595, below negative shortcut threshhold 0.05
-Tue, 11 Jul 2017 00:22:08 sbcharsetprober.py[line: 119] DEBUG windows-1255 confidence = 0.00653262412910491, below negative shortcut threshhold 0.05
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG CP932 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG KOI8-R Russian confidence = 0.15111716108083814
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Russian confidence = 0.055146267554151786
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG MacCyrillic Russian confidence = 0.06873580240650869
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG IBM866 Russian confidence = 0.013040230506407954
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG IBM855 Russian confidence = 0.0822161139174278
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG ISO-8859-7 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG windows-1253 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG ISO-8859-5 Bulgairan confidence = 0.06176382723523887
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG windows-1251 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG TIS-620 Thai confidence = 0.09670565632844884
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG ISO-8859-9 Turkish confidence = 0.13379009708471654
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG windows-1255 Hebrew confidence = 0.0
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG windows-1255 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG utf-8 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG CP932 not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 97] DEBUG EUC-JP not active
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG GB2312 Chinese confidence = 0.99
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG EUC-KR Korean confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG CP949 Korean confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG Big5 Chinese confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 charsetgroupprober.py[line: 100] DEBUG EUC-TW Taiwan confidence = 0.01
-Tue, 11 Jul 2017 00:22:09 mylog.py[line: 18] INFO NetEase:create a new base info
-Tue, 11 Jul 2017 00:22:09 mylog.py[line: 18] INFO NetEase:store new data success
-Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO get_latest:new connect to test
-Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
-Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.qq.com
-Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
-Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.9830234120391075 HTTP/1.1" 200 None
-Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.9830234120391075 success
-Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 395] DEBUG http://roll.news.qq.com:80 "POST /interface/roll.php?0.1&cata=newsgn&site=news&date=&page=1&mode=1&of=json HTTP/1.1" 200 None
-Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Request http://roll.news.qq.com/interface/roll.php?0.1&cata=newsgn&site=news&date=&page=1&mode=1&of=json success
-Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Tencent:create a new base info
-Tue, 11 Jul 2017 00:21:15 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499660475&r=0.885406982436902 HTTP/1.1" 200 3215
-Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499660475&r=0.885406982436902 success
-Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Sina:create a new base info
-Tue, 11 Jul 2017 00:21:15 mylog.py[line: 18] INFO Tencent:store new data success
-Tue, 11 Jul 2017 00:21:16 mylog.py[line: 18] INFO Sina:store new data success
-Tue, 11 Jul 2017 00:21:17 mylog.py[line: 18] INFO NetEase:create a new base info
-Tue, 11 Jul 2017 00:21:17 mylog.py[line: 18] INFO NetEase:store new data success
+Tue, 11 Jul 2017 09:38:55 mylog.py[line: 18] INFO get_latest:new connect to news_list
+Tue, 11 Jul 2017 09:38:55 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.163.com
+Tue, 11 Jul 2017 09:38:55 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.qq.com
+Tue, 11 Jul 2017 09:38:55 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Tue, 11 Jul 2017 09:38:55 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): roll.news.sina.com.cn
+Tue, 11 Jul 2017 09:38:56 connectionpool.py[line: 395] DEBUG http://roll.news.sina.com.cn:80 "GET /interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499736685&r=0.5460632932859432 HTTP/1.1" 200 170
+Tue, 11 Jul 2017 09:38:56 mylog.py[line: 18] INFO Request http://roll.news.sina.com.cn/interface/rollnews_ch_out_interface.php?col=90&spec=&date=&ch=01&k=&offset_page=0&offset_num=0&num=60&asc=&page=1&last_time=1499736685&r=0.5460632932859432 success
+Tue, 11 Jul 2017 09:38:56 mylog.py[line: 18] INFO Sina:new data is none
+Tue, 11 Jul 2017 09:38:56 connectionpool.py[line: 395] DEBUG http://roll.news.qq.com:80 "POST /interface/roll.php?0.1&cata=newsgn&site=news&date=&page=1&mode=1&of=json HTTP/1.1" 200 None
+Tue, 11 Jul 2017 09:38:56 mylog.py[line: 18] INFO Request http://roll.news.qq.com/interface/roll.php?0.1&cata=newsgn&site=news&date=&page=1&mode=1&of=json success
+Tue, 11 Jul 2017 09:38:56 mylog.py[line: 18] INFO Tencent:new data is none
+Tue, 11 Jul 2017 09:38:56 connectionpool.py[line: 395] DEBUG http://news.163.com:80 "GET /special/0001220O/news_json.js?0.8351130142574368 HTTP/1.1" 200 None
+Tue, 11 Jul 2017 09:38:56 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Tue, 11 Jul 2017 09:38:56 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Tue, 11 Jul 2017 09:38:56 mylog.py[line: 18] INFO Request http://news.163.com/special/0001220O/news_json.js?0.8351130142574368 success
+Tue, 11 Jul 2017 09:38:56 mylog.py[line: 18] INFO ifeng:new data is none
+Tue, 11 Jul 2017 09:38:58 mylog.py[line: 18] INFO NetEase:new data is none
