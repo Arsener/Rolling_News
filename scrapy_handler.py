@@ -65,14 +65,12 @@ class Work(threading.Thread):
             try:
                 if not self.work_queue.empty():
                     do_works, args = self.work_queue.get(block=False)
-                    if lock.acquire():
-                        if isinstance(args, list) or isinstance(args, tuple):
-                            do_works(*args)
-                        else:
-                            do_works(args)
-                        time.sleep(0.01)
-                        self.work_queue.task_done()
-                        lock.release()
+                    if isinstance(args, list) or isinstance(args, tuple):
+                        do_works(*args)
+                    else:
+                        do_works(args)
+                    time.sleep(0.01)
+                    self.work_queue.task_done()
                 else:
                     break
             except Exception as e:

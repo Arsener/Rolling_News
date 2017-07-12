@@ -1,2 +1,255 @@
-Wed, 12 Jul 2017 13:43:46 mylog.py[line: 18] INFO 'builtin_function_or_method' object has no attribute 'acquire'
-Wed, 12 Jul 2017 13:43:46 mylog.py[line: 18] INFO 'builtin_function_or_method' object has no attribute 'acquire'
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): news.ifeng.com
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://news.ifeng.com:80 "GET /listpage/11528/0/1/rtlist.shtml HTTP/1.1" 200 None
+Wed, 12 Jul 2017 17:04:41 mylog.py[line: 18] INFO Request http://news.ifeng.com/listpage/11528/0/1/rtlist.shtml success
+Wed, 12 Jul 2017 17:04:41 mylog.py[line: 18] INFO get_latest:new connect to my-news
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 207] DEBUG Starting new HTTP connection (1): 127.0.0.1
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "HEAD /my-news/news-last-time/ifeng HTTP/1.1" 404 0
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "HEAD /my-news/news-last-time/ifeng HTTP/1.1" 404 0
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-last-time/ifeng HTTP/1.1" 201 154
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-last-time/ifeng [status:201 request:0.017s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "小渔村来了家庭医生", "url": "http://news.ifeng.com/a/20170712/51419645_0.shtml", "time": "2017-07-12 16:53", "num": 48}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-last-time","_id":"ifeng","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 mylog.py[line: 18] INFO ifeng:update new last_time success
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng0 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng0 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "小渔村来了家庭医生", "url": "http://news.ifeng.com/a/20170712/51419645_0.shtml", "time": "2017-07-12 16:53", "num": 48, "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng0","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng1 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng1 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "工信部否认要禁止个人VPN业务：规范对象是无资质者", "url": "http://news.ifeng.com/a/20170712/51419636_0.shtml", "time": "2017-07-12 16:48", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng1","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng2 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng2 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "陕西靖边交警事故现场嗑瓜子，官方通报：停职十天", "url": "http://news.ifeng.com/a/20170712/51419635_0.shtml", "time": "2017-07-12 16:48", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng2","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng3 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng3 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "菲律宾就“南海仲裁”一周年发声明 中方回应", "url": "http://news.ifeng.com/a/20170712/51419609_0.shtml", "time": "2017-07-12 16:44", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng3","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng4 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng4 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "解放军成立吉布提保障基地出于什么考虑？中方回应", "url": "http://news.ifeng.com/a/20170712/51419602_0.shtml", "time": "2017-07-12 16:41", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng4","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng5 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng5 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "中科大偷偷资助“不舍得吃饭”的学生4万次", "url": "http://news.ifeng.com/a/20170712/51419600_0.shtml", "time": "2017-07-12 16:40", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng5","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng6 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng6 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "甘肃官场震荡：前省委书记被查，数名官员非正常死亡", "url": "http://news.ifeng.com/a/20170712/51419543_0.shtml", "time": "2017-07-12 16:29", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng6","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng7 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng7 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "为防止暴露身份信息，缉毒警察“毛玻璃”后出庭作证", "url": "http://news.ifeng.com/a/20170712/51419535_0.shtml", "time": "2017-07-12 16:24", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng7","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng8 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng8 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "北京什刹海酒吧街：强力拆除违建，景区要静下来", "url": "http://news.ifeng.com/a/20170712/51419426_0.shtml", "time": "2017-07-12 16:13", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng8","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng9 HTTP/1.1" 201 150
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng9 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "新疆克州中巴公路遭遇泥石流，两百多辆车千余人被困", "url": "http://news.ifeng.com/a/20170712/51419389_0.shtml", "time": "2017-07-12 16:02", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng9","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng10 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng10 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "实拍：北京地铁两女子隔车门打架，门快关了还拉扯", "url": "http://news.ifeng.com/a/20170712/51419295_0.shtml", "time": "2017-07-12 15:55", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng10","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng11 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng11 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "真情援和20载 京和人民心连心", "url": "http://news.ifeng.com/a/20170712/51419283_0.shtml", "time": "2017-07-12 15:48", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng11","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng12 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng12 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "安徽霍山回应“高分考生志愿被删”：确保就读霍山中学", "url": "http://news.ifeng.com/a/20170712/51419196_0.shtml", "time": "2017-07-12 15:45", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng12","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng13 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng13 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "湖北省政协副主席刘善桥涉嫌严重违纪被免职", "url": "http://news.ifeng.com/a/20170712/51419181_0.shtml", "time": "2017-07-12 15:40", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng13","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng14 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng14 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "吉林省人大常委会原副主任周化辰涉严重违法违纪", "url": "http://news.ifeng.com/a/20170712/51419002_0.shtml", "time": "2017-07-12 14:57", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng14","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng15 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng15 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "国务院公布17处新建国家级自然保护区(名单)", "url": "http://news.ifeng.com/a/20170712/51418904_0.shtml", "time": "2017-07-12 14:33", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng15","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng16 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng16 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "11名民众分20万奖金：围堵姚常凤 逼他举手投降", "url": "http://news.ifeng.com/a/20170712/51418581_0.shtml", "time": "2017-07-12 13:41", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng16","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng17 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng17 [status:201 request:0.011s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "清华寄出2017年首封录取通知书 在藏录取14人创纪录", "url": "http://news.ifeng.com/a/20170712/51418511_0.shtml", "time": "2017-07-12 13:17", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng17","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng18 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng18 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "媒体：“键盘侠”别喷了 丽江被打女子撤诉是其权利", "url": "http://news.ifeng.com/a/20170712/51418490_0.shtml", "time": "2017-07-12 13:09", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng18","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng19 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng19 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "海归科学家黄大年的最后30天", "url": "http://news.ifeng.com/a/20170712/51418459_0.shtml", "time": "2017-07-12 12:57", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng19","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng20 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng20 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "广西一官员抗洪期间因公去世 连续3天在救灾一线", "url": "http://news.ifeng.com/a/20170712/51418285_0.shtml", "time": "2017-07-12 12:02", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng20","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng21 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng21 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "20年纪检老兵被查 广东正厅还是没有安全着陆", "url": "http://news.ifeng.com/a/20170712/51418220_0.shtml", "time": "2017-07-12 11:51", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng21","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng22 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng22 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "杜家毫：以优异成绩迎接十九大胜利召开", "url": "http://news.ifeng.com/a/20170712/51418009_0.shtml", "time": "2017-07-12 11:22", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng22","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng23 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng23 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "国家网信办开展互联网直播服务企业备案工作", "url": "http://news.ifeng.com/a/20170712/51417846_0.shtml", "time": "2017-07-12 11:05", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng23","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng24 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng24 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "山东发生13起撕毁环保封条事件 21名企业法人代表被拘", "url": "http://news.ifeng.com/a/20170712/51417753_0.shtml", "time": "2017-07-12 10:59", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng24","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng25 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng25 [status:201 request:0.009s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "河南裕达案一审：郭文贵指使高管骗贷14亿", "url": "http://news.ifeng.com/a/20170712/51417718_0.shtml", "time": "2017-07-12 10:53", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng25","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng26 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng26 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "李克强冒暑陕西考察，与当地干部民众都算了哪些账？", "url": "http://news.ifeng.com/a/20170712/51417507_0.shtml", "time": "2017-07-12 10:42", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng26","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng27 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng27 [status:201 request:0.011s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "王三运走过四个省份，却终于没能跨过黄河", "url": "http://news.ifeng.com/a/20170712/51417462_0.shtml", "time": "2017-07-12 10:39", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng27","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng28 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng28 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "辽宁：做好人大换届工作是修复政治生态的迫切需要", "url": "http://news.ifeng.com/a/20170712/51417359_0.shtml", "time": "2017-07-12 10:31", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng28","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng29 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng29 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "一图读懂北京“疏解整治促提升”半年成绩单", "url": "http://news.ifeng.com/a/20170712/51417266_0.shtml", "time": "2017-07-12 10:20", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng29","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng30 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng30 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "“王者荣耀”加码防沉迷 南方日报：技术手段非万能 ", "url": "http://news.ifeng.com/a/20170712/51417195_0.shtml", "time": "2017-07-12 10:08", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng30","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng31 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng31 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng31","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng32 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng32 [status:201 request:0.008s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "南方日报：不该把涨价作为治理出租车行业乱象的首选", "url": "http://news.ifeng.com/a/20170712/51417093_0.shtml", "time": "2017-07-12 09:56", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng32","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng33 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng33 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "北京疏解整治促提升6项任务超额完成全年计划", "url": "http://news.ifeng.com/a/20170712/51417082_0.shtml", "time": "2017-07-12 09:54", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng33","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng34 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng34 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "内蒙古鄂尔多斯一建筑工地发生坍塌 8人遇难", "url": "http://news.ifeng.com/a/20170712/51417079_0.shtml", "time": "2017-07-12 09:52", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng34","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:41 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng35 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:41 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng35 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:41 base.py[line: 85] DEBUG > {"title": "浙江6县河水水质反复 治好的河水变劣Ⅴ类", "url": "http://news.ifeng.com/a/20170712/51417023_0.shtml", "time": "2017-07-12 09:43", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:41 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng35","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:41 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng36 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng36 [status:201 request:0.011s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "新当选的省区市纪委书记：旗帜鲜明讲政治", "url": "http://news.ifeng.com/a/20170712/51416792_0.shtml", "time": "2017-07-12 09:07", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng36","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng37 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng37 [status:201 request:0.011s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "三个疯子，三个赌徒：贾跃亭、孙宏斌、王健林", "url": "http://news.ifeng.com/a/20170712/51416496_0.shtml", "time": "2017-07-12 08:35", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng37","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng38 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng38 [status:201 request:0.011s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "北京：有85万“朝阳群众”治安志愿者", "url": "http://news.ifeng.com/a/20170712/51416029_0.shtml", "time": "2017-07-12 07:32", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng38","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng39 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng39 [status:201 request:0.017s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "北京：半年拆违3000余万平方米 整治开墙打洞2.1万处", "url": "http://news.ifeng.com/a/20170712/51415974_0.shtml", "time": "2017-07-12 07:25", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng39","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng40 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng40 [status:201 request:0.015s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "科技专项资金使用再松绑 报酬待遇不能亏欠科学家", "url": "http://news.ifeng.com/a/20170712/51415444_0.shtml", "time": "2017-07-12 06:35", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng40","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng41 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng41 [status:201 request:0.014s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "北京将多渠道增加租房房源 加快推进住房租赁立法", "url": "http://news.ifeng.com/a/20170712/51415178_0.shtml", "time": "2017-07-12 04:06", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng41","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng42 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng42 [status:201 request:0.014s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "北京市委书记蔡奇：将设雄安新区中关村科技园", "url": "http://news.ifeng.com/a/20170712/51415134_0.shtml", "time": "2017-07-12 03:51", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng42","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng43 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng43 [status:201 request:0.012s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "港媒称马云“无人店”考验人品：100%付款是美好想象", "url": "http://news.ifeng.com/a/20170712/51415065_0.shtml", "time": "2017-07-12 02:28", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng43","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng44 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng44 [status:201 request:0.011s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "郎平开始康复训练 撑拐杖散步亲自下厨", "url": "http://news.ifeng.com/a/20170712/51415034_0.shtml", "time": "2017-07-12 02:00", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng44","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng45 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng45 [status:201 request:0.013s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "卫计委：二级以上医院需安检 行为异常者由保安陪诊", "url": "http://news.ifeng.com/a/20170712/51414885_0.shtml", "time": "2017-07-12 01:00", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng45","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng46 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng46 [status:201 request:0.010s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "杨诚出任第73集团军政委", "url": "http://news.ifeng.com/a/20170712/51414817_0.shtml", "time": "2017-07-12 00:29", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng46","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 retry.py[line: 200] DEBUG Converted retries value: False -> Retry(total=False, connect=None, read=None, redirect=0, status=None)
+Wed, 12 Jul 2017 17:04:42 connectionpool.py[line: 395] DEBUG http://127.0.0.1:9200 "PUT /my-news/news-info/ifeng47 HTTP/1.1" 201 151
+Wed, 12 Jul 2017 17:04:42 base.py[line: 83] INFO PUT http://127.0.0.1:9200/my-news/news-info/ifeng47 [status:201 request:0.012s]
+Wed, 12 Jul 2017 17:04:42 base.py[line: 85] DEBUG > {"title": "广东普宁：吊车侧翻砸中路过小客车致7死3伤", "url": "http://news.ifeng.com/a/20170712/51414794_0.shtml", "time": "2017-07-12 00:15", "from": "ifeng"}
+Wed, 12 Jul 2017 17:04:42 base.py[line: 86] DEBUG < {"_index":"my-news","_type":"news-info","_id":"ifeng47","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}
+Wed, 12 Jul 2017 17:04:42 mylog.py[line: 18] INFO ifeng:store new data success
