@@ -4,6 +4,8 @@ import queue
 import time
 import mylog
 
+lock=threading.Lock
+
 class ScrapyException(Exception):
     pass
 
@@ -58,16 +60,19 @@ class Work(threading.Thread):
         '''
         overwrite the run : work
         '''
+        global lock
         while True:
             try:
                 if not self.work_queue.empty():
                     do_works, args = self.work_queue.get(block=False)
-                    if isinstance(args, list) or isinstance(args, tuple):
-                        do_works(*args)
-                    else:
-                        do_works(args)
-                    time.sleep(0.01)
-                    self.work_queue.task_done()
+                    if lock.acquire():
+                        if isinstance(args, list) or isinstance(args, tuple):
+                            do_works(*args)
+                        else:
+                            do_works(args)
+                        time.sleep(0.01)
+                        self.work_queue.task_done()
+                        lock.release()
                 else:
                     break
             except Exception as e:
