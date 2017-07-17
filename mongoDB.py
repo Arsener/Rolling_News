@@ -51,3 +51,27 @@ class MongoDB(object):
             return json.loads(latest.split('[')[1].split(']')[0].replace("'", '"'))
         else:
             return {'title':'none'}
+
+    @classmethod
+    def get_top10(cls, web_list):
+        if cls.__db is None:
+            client = MongoClient(MONGO_URL, MONGO_PORT)
+            cls.__db = client[MONGO_DB]
+            mylog.logInfo("get_latest:new connect to "+MONGO_DB)
+
+        news_list = []
+        for web_name in web_list:
+            latest = None
+            for item in cls.__db[MONGO_TABLE].find({'from': web_name}, {'data': {'$slice': [-10, 10]}}):
+                latest = str(item)
+            if latest is not None:
+                latest = latest.split('[')[1].split(']')[0].replace("'", '"').replace('", "','"# "')
+                if latest is not "":
+                    latest = latest.split(",")
+                for d in latest:
+                    d = str(d).strip().replace('#',',')
+                    news_list.append(json.loads(d))
+            else:
+                continue
+
+        return news_list
