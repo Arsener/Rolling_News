@@ -36,12 +36,13 @@ class ElasticSearch(object):
                        body=body)
 
         mylog.logInfo('%s:update new last_time success' % web_name)
-
+        new_data[0].pop('num')
         #存储数据
-
         for i in range(len(new_data)):
             new_data[i]['from']=web_name
-            self.__es.index(index=ELASTICSEARCH_NEWS_INDEX, doc_type=ELASTICSEARCH_NEWS_TYPE_OF_INFO, id=web_name+str(i+count), body=new_data[i])
+            st = time.strptime(new_data[i]['time'], '%Y-%m-%d %H:%M:%S')
+            new_data[i]['time_num']=int(time.mktime(st))
+            self.__es.index(index=ELASTICSEARCH_NEWS_INDEX, doc_type=ELASTICSEARCH_NEWS_TYPE_OF_INFO, body=new_data[i])
         mylog.logInfo('%s:store new data success' % web_name)
 
 

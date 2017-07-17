@@ -91,7 +91,7 @@ class Sohu_news_scrapy(News_scrapy):
             dict['url'] = item[2]
             item[3] = '' + item[3].replace('/', '-')
             item[3] = year + '-' + item[3]
-            dict['time'] = item[3]
+            dict['time'] = item[3]+":00"
             data.append(dict)
         return  data
 
@@ -168,7 +168,7 @@ class Tencent_news_scrapy(News_scrapy):
                 break
             dict['title'] = titles[i]
             dict['url'] = urls[i]
-            dict['time'] = year + '-' + times[i]
+            dict['time'] = year + '-' + times[i]+":00"
             data.append(dict)
         return data
 
@@ -202,7 +202,7 @@ class Ifeng_news_scrapy(News_scrapy):
             title = detail.get_text()
             url = detail['href']
             news_time = news.find('h4').get_text()
-            news_time = '2017-' + news_time.replace('/', '-')
+            news_time = '2017-' + news_time.replace('/', '-')+":00"
 
             dict = {}
             dict['title'] = title
