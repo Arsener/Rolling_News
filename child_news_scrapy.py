@@ -207,7 +207,7 @@ class Ifeng_news_scrapy(News_scrapy):
             dict = {}
             dict['title'] = title
             dict['url'] = url
-            dict['time'] = news_time + ":00"
+            dict['time'] = news_time
             data.append(dict)
 
         return data

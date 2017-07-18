@@ -26,7 +26,7 @@ def unauthorized():
 
 
 @app.route('/api/es')
-#@auth.login_required
+@auth.login_required
 def get_latest_news():
     result={}
     result['request_time'] = time.time()
