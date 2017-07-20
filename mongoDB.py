@@ -22,12 +22,7 @@ class MongoDB(object):
             cls.__db[MONGO_TABLE].insert({"from": web_name, "data": []})
             mylog.logInfo('%s:create a new base info'%web_name)
 
-        # cls.__db.news_cla.remove()
-        # for item in cls.__db.news_cla.find():
-        #     print(item)
-
         new_data.reverse()
-        # if len(latest) == 0:
         for data in new_data:
             cls.__db[MONGO_TABLE].update({"from": web_name}, {'$push': {"data": data}})
 
