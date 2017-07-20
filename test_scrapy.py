@@ -1,6 +1,6 @@
 # encoding: utf-8
 import requests
-import json
+import json,time
 
 url="http://localhost:5000/api/es"
 s = requests.Session()
