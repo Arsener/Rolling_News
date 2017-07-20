@@ -25,7 +25,7 @@ def unauthorized():
 
 
 
-@app.route('/api/es')
+@app.route('/api/latest_news')
 @auth.login_required
 def get_latest_news():
     result={}
