@@ -22,7 +22,7 @@ def unauthorized():
 
 
 @app.route('/api/latest_news')
-# @auth.login_required
+#@auth.login_required
 def get_latest_news():
     web_list = ['新浪','网易','腾讯','凤凰','搜狐']
     data = mongoDB.MongoDB.get_top10(web_list)
