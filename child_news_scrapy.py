@@ -8,7 +8,7 @@ from requests_c import Requests_c
 import re
 
 class Sina_news_scrapy(News_scrapy):
-    name = 'Sina'
+    name = '新浪'
 
     def __init__(self):
         super(Sina_news_scrapy,self).__init__(self.name)
@@ -53,11 +53,12 @@ class Sina_news_scrapy(News_scrapy):
             list['url'] = 'http://news.sina.com.cn/' + urls[i] + '.shtml'
             list['time'] = time.localtime(int(times[i]))
             list['time'] = time.strftime("%Y-%m-%d %H:%M:%S", list['time'])
+            list['from'] = '新浪'
             data.append(list)
         return data
 
 class Sohu_news_scrapy(News_scrapy):
-    name = 'sohu'
+    name = '搜狐'
 
     def __init__(self):
         super(Sohu_news_scrapy,self).__init__(self.name)
@@ -92,11 +93,12 @@ class Sohu_news_scrapy(News_scrapy):
             item[3] = '' + item[3].replace('/', '-')
             item[3] = year + '-' + item[3]
             dict['time'] = item[3]+":00"
+            dict['from'] = '搜狐'
             data.append(dict)
         return  data
 
 class NetEase_news_scrapy(News_scrapy):
-    name = 'NetEase'
+    name = '网易'
 
     def __init__(self):
         super(NetEase_news_scrapy,self).__init__(self.name)
@@ -128,13 +130,14 @@ class NetEase_news_scrapy(News_scrapy):
             dict['title'] = title
             dict['url'] = url
             dict['time'] = news_time
+            dict['from'] = '网易'
             data.append(dict)
 
         return data
 
 
 class Tencent_news_scrapy(News_scrapy):
-    name = 'Tencent'
+    name = '腾讯'
 
     def __init__(self):
         super(Tencent_news_scrapy,self).__init__(self.name)
@@ -169,11 +172,12 @@ class Tencent_news_scrapy(News_scrapy):
             dict['title'] = titles[i]
             dict['url'] = urls[i]
             dict['time'] = year + '-' + times[i]+":00"
+            dict['from'] = '腾讯'
             data.append(dict)
         return data
 
 class Ifeng_news_scrapy(News_scrapy):
-    name = 'ifeng'
+    name = '凤凰'
 
     def __init__(self):
         super(Ifeng_news_scrapy,self).__init__(self.name)
@@ -208,6 +212,7 @@ class Ifeng_news_scrapy(News_scrapy):
             dict['title'] = title
             dict['url'] = url
             dict['time'] = news_time
+            dict['from'] = '凤凰'
             data.append(dict)
 
         return data

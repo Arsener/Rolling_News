@@ -29,40 +29,40 @@ class Console():
 
     def func(self,web_name):  #每个线程的工作函数
         lock=threading.Lock
-        if web_name == 'Sina':
+        if web_name == '新浪':
             sina = Sina_news_scrapy()
             url = sina.url_construct()
             sina.url_request(url,'')
             data = sina.get_data()
-            mongoDB.MongoDB.store('Sina', data)
+            mongoDB.MongoDB.store('新浪', data)
             # elasticSearch.ElasticSearch.store('Sina',data)
-        elif web_name == 'NetEase':
+        elif web_name == '网易':
             netease = NetEase_news_scrapy()
             url = netease.url_construct()
             netease.url_request(url,'')
             data = netease.get_data()
-            mongoDB.MongoDB.store('NetEase', data)
+            mongoDB.MongoDB.store('网易', data)
             # elasticSearch.ElasticSearch.store('NetEase', data)
-        elif web_name == 'sohu':
+        elif web_name == '搜狐':
             sohu = Sohu_news_scrapy()
             url = sohu.url_construct()
             sohu.url_request(url,'')
             data = sohu.get_data()
-            mongoDB.MongoDB.store('sohu', data)
+            mongoDB.MongoDB.store('搜狐', data)
             # elasticSearch.ElasticSearch.store('sohu', data)
-        elif web_name == 'ifeng':
+        elif web_name == '凤凰':
             ifeng = Ifeng_news_scrapy()
             url = ifeng.url_construct()
             ifeng.url_request(url,'')
             data = ifeng.get_data()
-            mongoDB.MongoDB.store('ifeng', data)
+            mongoDB.MongoDB.store('凤凰', data)
             # elasticSearch.ElasticSearch.store('ifeng', data)
-        elif web_name == 'Tencent':
+        elif web_name == '腾讯':
             tencent= Tencent_news_scrapy()
             url,headers=tencent.url_construct()
             tencent.url_request(url,headers)
             data=tencent.get_data()
-            mongoDB.MongoDB.store('Tencent', data)
+            mongoDB.MongoDB.store('腾讯', data)
             # elasticSearch.ElasticSearch.store('Tencent', data)
 
     def mlti_thread(self,web_list):        #多线程处理
