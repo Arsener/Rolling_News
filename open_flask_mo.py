@@ -24,7 +24,7 @@ def unauthorized():
 @app.route('/api/latest_news', methods = ['POST'])
 # @auth.login_required
 def get_latest_news():
-    if request.form.get('name') == 'arsener':
+    if request.form.get('name') == 'arsener' and request.form.get('password') == '123':
         web_list = ['新浪','网易','腾讯','凤凰','搜狐']
         data = mongoDB.MongoDB.get_top10(web_list)
         data = sorted(data, key=lambda d: int(time.mktime(time.strptime(d['time'], "%Y-%m-%d %H:%M:%S"))))
