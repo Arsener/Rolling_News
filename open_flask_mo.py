@@ -1,5 +1,5 @@
 # -*- encoding = utf-8 -*-
-from flask import Flask, make_response, request
+from flask import Flask, Blueprint, request
 import mongoDB
 import time
 import json
@@ -30,7 +30,6 @@ def get_latest_news():
             tmp = tmp[0:from_index + 4] + str(i) + tmp[from_index + 4:]
             tmp = tmp.replace("'", '"')
             tmp = tmp.replace('|',':')
-            print (tmp)
             index_data.append(json.loads(tmp))
         return '{"request_time":' + str(time.time()) + ', "latest_news":' + str(index_data).replace("'", '"') + '}'
     else:
@@ -38,4 +37,7 @@ def get_latest_news():
 
 
 if __name__ == "__main__":
+    from werkzeug.contrib.fixers import ProxyFix
+
+    app.wsgi_app = ProxyFix(app.wsgi_app)
     app.run()
