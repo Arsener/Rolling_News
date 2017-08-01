@@ -1,24 +1,10 @@
 # -*- encoding = utf-8 -*-
 from flask import Flask, make_response, request
-from flask_httpauth import HTTPBasicAuth
 import mongoDB
 import time
 import json
 
 app = Flask(__name__)
-auth = HTTPBasicAuth()
-
-
-@auth.get_password
-def get_password(username):
-    if username == 'ok':
-        return 'python'
-    return None
-
-
-@auth.error_handler
-def unauthorized():
-    return make_response(str({'error': 'Unauthorized access'}), 401)
 
 	
 @app.route('/api/latest_news', methods = ['POST'])
@@ -50,18 +36,6 @@ def get_latest_news():
     else:
         return '{"request_time":-1}'
 
-@app.route('/register', methods=['POST'])
-def register():
-    print(request.headers)
-    print(request.form)
-    print(request.form['name'])
-    print(request.form.get('name'))
-    print(request.form.getlist('name'))
-    print(request.form.get('nickname', default='little apple'))
-    return 'welcome'
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
 
 if __name__ == "__main__":
     app.run()
