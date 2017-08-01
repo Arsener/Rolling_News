@@ -34,7 +34,8 @@ def get_latest_news():
         index_data = []
         for i in range(0, 10):
             tmp = str(data[i])
-            tmp = tmp[0:7] + str(i) + tmp[7:]
+            title_index = tmp.find("title")
+            tmp = tmp[0:title_index + 5] + str(i) + tmp[title_index + 5:]
             url_index = tmp.find("url")
             tmp = tmp[0:url_index + 3] + str(i) + tmp[url_index + 3:]
             time_index = tmp.find("time")
@@ -42,7 +43,8 @@ def get_latest_news():
             from_index = tmp.find("from")
             tmp = tmp[0:from_index + 4] + str(i) + tmp[from_index + 4:]
             tmp = tmp.replace("'", '"')
-            tmp = tmp.replace('|','：')
+            tmp = tmp.replace('|',':')
+            print (tmp)
             index_data.append(json.loads(tmp))
         return '{"request_time":' + str(time.time()) + ', "latest_news":' + str(index_data).replace("'", '"') + '}'
     else:
