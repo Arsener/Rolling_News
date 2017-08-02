@@ -13,12 +13,9 @@ class News_scrapy(object):
     def url_construct(self):   #每个子类中分别重写
         pass
 
-    def url_request(self,url,headers):
+    def url_request(self,url,headers = ''):
         re = requests_c.Requests_c(url)
-        if headers:
-            self.first_data = re.url_handler(headers)
-        else:
-            self.first_data = re.url_handler('')
+        self.first_data = re.url_handler(headers)
 
     def get_data(self):   #每个子类中分别重写
         pass

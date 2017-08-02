@@ -1,6 +1,6 @@
 # -*- encoding = utf-8 -*-
 from flask import Flask, Blueprint, request
-import mongoDB
+from mongoDB import MongoDB
 import time
 import json
 
@@ -12,7 +12,7 @@ app = Flask(__name__)
 def get_latest_news():
     if request.form.get('name') == 'arsener' and request.form.get('password') == '123':
         web_list = ['新浪','网易','腾讯','凤凰','搜狐']
-        data = mongoDB.MongoDB.get_top10(web_list)
+        data = MongoDB.get_top10(web_list)
         data = sorted(data, key=lambda d: int(time.mktime(time.strptime(d['time'], "%Y-%m-%d %H:%M:%S"))))
         data.reverse()
         data = data[0:10]
@@ -41,3 +41,6 @@ if __name__ == "__main__":
 
     app.wsgi_app = ProxyFix(app.wsgi_app)
     app.run()
+
+
+# gunicorn -w 4 -b 127.0.0.1:8000 open_flask_mo:app

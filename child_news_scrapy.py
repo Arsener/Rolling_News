@@ -1,6 +1,7 @@
 # encoding: utf-8
 import random,time,json
-import mongoDB,elasticSearch
+from mongoDB import MongoDB
+from elasticSearch import ElasticSearch
 from urllib.parse import urlencode
 from news_scrapy import News_scrapy
 from bs4 import BeautifulSoup
@@ -31,8 +32,8 @@ class Sina_news_scrapy(News_scrapy):
               "r":''
         }
         url_param['r']=random.random()
-        latest = mongoDB.MongoDB.get_latest(self.name)
-        # latest = elasticSearch.ElasticSearch.get_latest(self.name)
+        # latest = MongoDB.get_latest(self.name)
+        latest = ElasticSearch.get_latest(self.name)
         if latest['title']=='none':
             url_param['last_time'] = str(self.last_time)
         else:
@@ -78,8 +79,8 @@ class Sohu_news_scrapy(News_scrapy):
         te = json.loads(t)
         year = time.strftime('%Y', time.localtime())
 
-        latest = mongoDB.MongoDB.get_latest(self.name)
-        # latest = elasticSearch.ElasticSearch.get_latest(self.name)
+        # latest = MongoDB.get_latest(self.name)
+        latest = ElasticSearch.get_latest(self.name)
         latest_title = latest.get('title')
 
         data = []
@@ -112,8 +113,8 @@ class NetEase_news_scrapy(News_scrapy):
         t = self.first_data.text
         t = t[9:len(t)-1]
 
-        latest = mongoDB.MongoDB.get_latest(self.name)
-        # latest = elasticSearch.ElasticSearch.get_latest(self.name)
+        # latest = MongoDB.get_latest(self.name)
+        latest = ElasticSearch.get_latest(self.name)
         latest_title = latest.get('title')
         news_list = json.loads(t).get("news")[0]
 
@@ -159,8 +160,8 @@ class Tencent_news_scrapy(News_scrapy):
         urls = re.compile('</span><a target="_blank" href="(.*?)">').findall(info)
         times = re.compile('<span class="t-time">(.*?)</span><span class="t-tit">').findall(info)
 
-        latest = mongoDB.MongoDB.get_latest(self.name)
-        # latest = elasticSearch.ElasticSearch.get_latest(self.name)
+        # latest = MongoDB.get_latest(self.name)
+        latest = ElasticSearch.get_latest(self.name)
         latest_title = latest.get('title')
 
         data = []
@@ -193,8 +194,8 @@ class Ifeng_news_scrapy(News_scrapy):
         #http://news.ifeng.com/a/20170710/51407729_0.shtml
         news_list = bsObj.find('div', {'class' : 'newsList'}).find_all('li')
 
-        latest = mongoDB.MongoDB.get_latest(self.name)
-        # latest = elasticSearch.ElasticSearch.get_latest(self.name)
+        # latest = MongoDB.get_latest(self.name)
+        latest = ElasticSearch.get_latest(self.name)
         latest_title = latest.get('title')
 
         data = []
